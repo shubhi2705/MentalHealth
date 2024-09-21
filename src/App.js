@@ -32,6 +32,9 @@ import SignInPage from './components/SignInPage';
 import ProfilePage from './components/ProfilePage';
 import LanguagePage from './components/LanguagePage';
 import GreetingPage from './components/GreetingPage';
+import SelfAssessment from './components/SelfAssessment';
+import Thankyou from './components/Thankyou';
+import ExploreResources from './components/ExploreResources';
 
 function App() {
   return (
@@ -42,6 +45,9 @@ function App() {
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/language" element={<LanguagePage />} />
         <Route path="/greeting" element={<GreetingPage />} />
+        <Route path="/selfAssessment" element={<SelfAssessment />} />
+        <Route path="/thankyou" element={<Thankyou />} />
+        <Route path='/explore' element={<ExploreResources />} />
       </Routes>
     </Router>
   );
