@@ -35,7 +35,8 @@ import GreetingPage from './components/GreetingPage';
 import SelfAssessment from './components/SelfAssessment';
 import Thankyou from './components/Thankyou';
 import ExploreResources from './components/ExploreResources';
-
+import Emergency from './components/Emergency';
+import VirtualAssistant from './components/VirtualAssistant';
 function App() {
   return (
     <Router>
@@ -48,6 +49,8 @@ function App() {
         <Route path="/selfAssessment" element={<SelfAssessment />} />
         <Route path="/thankyou" element={<Thankyou />} />
         <Route path='/explore' element={<ExploreResources />} />
+        <Route path='/emergency' element={<Emergency />}/>
+        <Route path='/liveChat' element={<VirtualAssistant />} />
       </Routes>
     </Router>
   );
